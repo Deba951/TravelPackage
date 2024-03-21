@@ -13,7 +13,7 @@ The system consists of several key components:
    - `TravelPackage`: Represents a travel package with an itinerary, passenger capacity, and list of passengers.
 
 2. **Services**:
-   - `TravelService`: Interface defining operations like printing itinerary, managing passenger activities, and signing up for activities.
+   - `TravelService`: Interface defining operations like printing itineraries, managing passenger activities, and signing up for activities.
    - `TravelServiceImpl`: Implementation of `TravelService` with various functionalities.
 
 3. **Main Application**:
@@ -21,6 +21,39 @@ The system consists of several key components:
 
 4. **Tests**:
    - Unit tests are provided for models and services to ensure functionality and code quality.
+  
+
+## File Structures:
+TravelPackage/
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── models/
+│   │       │   ├── Activity.java
+│   │       │   ├── Destination.java
+│   │       │   ├── Passenger.java
+│   │       │   └── TravelPackage.java
+│   │       │
+│   │       ├── services/
+│   │       │   ├── TravelService.java
+│   │       │   └── TravelServiceImpl.java
+│   │       │
+│   │       └── Main.java
+│   │
+│   └── test/
+│       └── java/
+│           ├── services/
+│           │   └── TravelServiceTest.java
+│           │
+│           └── models/
+│               ├── ActivityTest.java
+│               ├── DestinationTest.java
+│               ├── PassengerTest.java
+│               └── TravelPackageTest.java
+│
+└── pom.xml (for Maven dependencies)
+
 
 ## Technologies Used
 
@@ -39,9 +72,9 @@ The system consists of several key components:
 
 - Assumptions:
   - Each passenger has a unique passenger number.
-  - Activities have a cost, capacity, and are associated with a specific destination.
+  - Activities have a cost, and capacity, and are associated with a specific destination.
   - Passengers can sign up for activities based on their passenger type (Standard, Gold, Premium).
 
 - Dummy Values (used in Main.java for testing purposes):
   - Dummy passenger names and balances are used for creating sample passengers.
-  - Sample travel destinations and activities are created for testing itinerary and sign-up functionalities.
+  - Sample travel destinations and activities are created for testing itineraries and sign-up functionalities.
