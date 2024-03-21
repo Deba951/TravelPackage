@@ -24,35 +24,37 @@ The system consists of several key components:
   
 
 ## File Structures:
-TravelPackage/
-│
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       ├── models/
-│   │       │   ├── Activity.java
-│   │       │   ├── Destination.java
-│   │       │   ├── Passenger.java
-│   │       │   └── TravelPackage.java
-│   │       │
-│   │       ├── services/
-│   │       │   ├── TravelService.java
-│   │       │   └── TravelServiceImpl.java
-│   │       │
-│   │       └── Main.java
-│   │
-│   └── test/
-│       └── java/
-│           ├── services/
-│           │   └── TravelServiceTest.java
-│           │
-│           └── models/
-│               ├── ActivityTest.java
-│               ├── DestinationTest.java
-│               ├── PassengerTest.java
-│               └── TravelPackageTest.java
-│
-└── pom.xml (for Maven dependencies)
+```
+   TravelPackage/
+   │
+   ├── src/
+   │   ├── main/
+   │   │   └── java/
+   │   │       ├── models/
+   │   │       │   ├── Activity.java
+   │   │       │   ├── Destination.java
+   │   │       │   ├── Passenger.java
+   │   │       │   └── TravelPackage.java
+   │   │       │
+   │   │       ├── services/
+   │   │       │   ├── TravelService.java
+   │   │       │   └── TravelServiceImpl.java
+   │   │       │
+   │   │       └── Main.java
+   │   │
+   │   └── test/
+   │       └── java/
+   │           ├── services/
+   │           │   └── TravelServiceTest.java
+   │           │
+   │           └── models/
+   │               ├── ActivityTest.java
+   │               ├── DestinationTest.java
+   │               ├── PassengerTest.java
+   │               └── TravelPackageTest.java
+   │
+   └── pom.xml (for Maven dependencies)
+```
 
 
 ## Technologies Used
